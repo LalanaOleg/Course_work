@@ -36,7 +36,7 @@ HALF_TEXTURE_SIZE = TEXTURE_SIZE // 2
 # MAP
 SIZE_BLOCK = 100
 MINI_MAP_SIZE_BLOCK = 20
-MAP_PATH = "C:\\Users\\Oleg\\Desktop\\kursova\\resources\\map.txt"
+MAP_PATH = "/resources/map.txt"
 
 # MOUSE
 MOUSE_SENSITIVITY = 0.0003

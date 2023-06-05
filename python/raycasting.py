@@ -38,7 +38,4 @@ class RayCasting(base_RayCast):
                 wall_pos = (int(ray * SCALE), int(self.game.player.angle_X - PLAYER_MAX_ANGLE_X))
 
             self.objects_to_render.append((depth, wall_column, wall_pos))
-            # self.game.sc.blit(wall_column, wall_pos)
-
-
 

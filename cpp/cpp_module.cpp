@@ -1,19 +1,11 @@
-#include "ray_casting.h"
-#include "map.h"
-#include "libraries.h"
-#include "objects.h"
-
-
-
-
-
+#include "cpp_module.hpp"
 
 PYBIND11_MODULE(cpp_module, m) {
 	
 	py::class_<RayCast>(m, "RayCast")
 		.def(py::init())
 		.def(py::init(&RayCast::create))
-        .def("ray_cast", &RayCast::ray_cast);
+      .def("ray_cast", &RayCast::ray_cast);
 	
 	py::class_<Map>(m, "Map")
 		.def(py::init(&Map::create))
@@ -28,6 +20,6 @@ PYBIND11_MODULE(cpp_module, m) {
 		.def("render_game_objects", &ObjectRenderer::render_game_objects);
 
 	py::class_<Object, Py_Object>(m, "Object")
-        .def(py::init())
-        .def("update", &Object::update);
+      .def(py::init())
+      .def("update", &Object::update);
 }

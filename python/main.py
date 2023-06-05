@@ -1,5 +1,5 @@
 import sys
-sys.path.append("C:/Users/Oleg/Desktop/kursova/build/Debug")
+import cpp_module
 import pygame as pg
 from settings import *
 from map import Map, Mini_Map

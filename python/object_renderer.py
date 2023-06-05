@@ -9,7 +9,7 @@ class ObjectRenderer(base_ObjectRenderer):
         self.screen = game.sc
         base_ObjectRenderer.__init__(self, self.game.sc)
         self.wall_textures = self.load_wall_textures()
-        self.sky_image = self.get_texture('C:/Users/Oleg/Desktop/kursova/resources/textures/sky.png', (WIDTH, HALF_HEIGHT + PLAYER_MAX_ANGLE_X))
+        self.sky_image = self.get_texture('resources/textures/sky.png', (WIDTH, HALF_HEIGHT + PLAYER_MAX_ANGLE_X))
         self.sky_offset = 0
 
     def draw(self):
@@ -35,5 +35,5 @@ class ObjectRenderer(base_ObjectRenderer):
 
     def load_wall_textures(self):
         return {
-            1: self.get_texture('C:/Users/Oleg/Desktop/kursova/resources/textures/1.png'),
+            1: self.get_texture('resources/textures/1.png'),
         }

@@ -73,12 +73,6 @@ class Player:
         self.mouse_control()
         self.movement()
 
-    def draw(self):
-        pg.draw.line(self.game.sc, GREEN, (self.x * MINI_MAP_SIZE_BLOCK, self.y * MINI_MAP_SIZE_BLOCK),
-                     (self.x * MINI_MAP_SIZE_BLOCK + 10 * math.cos(self.angle),
-                      self.y * MINI_MAP_SIZE_BLOCK + 10 * math.sin(self.angle)), 2)
-        pg.draw.circle(self.game.sc, RED, (self.x * MINI_MAP_SIZE_BLOCK, self.y * MINI_MAP_SIZE_BLOCK), 5)
-
     @property
     def pos(self):
         return self.x, self.y
