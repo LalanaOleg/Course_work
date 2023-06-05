@@ -1,4 +1,5 @@
 import math
+import sys
 
 # =============== DEFAULT SETTINGS OF PROGRAM =================================
 # SCREEN
@@ -36,7 +37,7 @@ HALF_TEXTURE_SIZE = TEXTURE_SIZE // 2
 # MAP
 SIZE_BLOCK = 100
 MINI_MAP_SIZE_BLOCK = 20
-MAP_PATH = "/resources/map.txt"
+MAP_PATH = '\\'.join(sys.argv[0].split('/')[:-2]) + '\\resources\\map.txt'
 
 # MOUSE
 MOUSE_SENSITIVITY = 0.0003

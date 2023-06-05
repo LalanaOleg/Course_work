@@ -40,7 +40,7 @@ public:
       ifstream f(file_name);
       if (!f.is_open())
       {
-         cout << "File is not found";
+         cout << "File is not found " << file_name;
          exit(0);
       }
       string buf;

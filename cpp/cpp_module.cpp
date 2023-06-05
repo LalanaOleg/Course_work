@@ -5,7 +5,7 @@ PYBIND11_MODULE(cpp_module, m) {
 	py::class_<RayCast>(m, "RayCast")
 		.def(py::init())
 		.def(py::init(&RayCast::create))
-      .def("ray_cast", &RayCast::ray_cast);
+        .def("ray_cast", &RayCast::ray_cast);
 	
 	py::class_<Map>(m, "Map")
 		.def(py::init(&Map::create))

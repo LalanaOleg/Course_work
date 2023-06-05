@@ -1,7 +1,6 @@
-import sys
-import cpp_module
 import pygame as pg
 from settings import *
+sys.path.append('\\'.join(sys.argv[0].split('/')[:-2]))
 from map import Map, Mini_Map
 from object_renderer import ObjectRenderer
 from player import Player
